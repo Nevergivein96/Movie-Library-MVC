@@ -1,7 +1,24 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using MySql.Data.MySqlClient;
+using System.Data;
+using Movie_Library_MVC;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<IDbConnection>((s) =>
+{
+    IDbConnection conn = new MySqlConnection(builder.Configuration.GetConnectionString("movielibrary"));
+    conn.Open();
+    return conn;
+});
+
+builder.Services.AddTransient<IMovieRepository, MovieRepository>();
 
 var app = builder.Build();
 
