@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 namespace Movie_Library_MVC.Controllers
 {
@@ -16,6 +17,11 @@ namespace Movie_Library_MVC.Controllers
         {
             var movies = repo.GetAllMovies();
             return View(movies);
+        }
+        public IActionResult ViewMovie(int id)
+        {
+            var movie = repo.GetMovie(id);
+            return View(movie);
         }
     }
 }

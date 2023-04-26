@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<Movie>
 
-<h2>Products</h2>
+<h2>Movies</h2>
 <table class="table">
     <tr>
         <th>Movie ID</th>
@@ -14,7 +14,7 @@
     @foreach (var movie in @Model)
     {
             <tr>
-                <td>@movie.MovieID</td>
+            <td><a href=/Movie/ViewMovie/@movie.MovieID>@movie.MovieID</a></td>
                 <td>@movie.MovieName</td>
                 <td>@movie.GenreName</td>
                 <td>@movie.Rating</td>

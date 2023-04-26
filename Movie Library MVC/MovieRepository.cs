@@ -15,5 +15,9 @@ namespace Movie_Library_MVC
         {
             return _conn.Query<Movie>("SELECT * FROM movie_library;");
         }
+        public Movie GetMovie(int id)
+        {
+            return _conn.QuerySingle<Movie>("SELECT * FROM movie_library WHERE movieid = @id", new { id = id });
+        }
     }
 }
