@@ -28,6 +28,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/1/Desktop/Repos/Movie Library MVC/Movie Library MVC/Views/Movie/InsertMovie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcSW5zZXJ0TW92aWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1/Desktop/Repos/Movie Library MVC/Movie Library MVC/Views/Movie/UpdateMovie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcVXBkYXRlTW92aWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/1/Desktop/Repos/Movie Library MVC/Movie Library MVC/Views/Movie/ViewMovie.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcVmlld01vdmllLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

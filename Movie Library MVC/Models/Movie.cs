@@ -8,7 +8,8 @@
         public string GenreName { get; set; }
         public string Rating { get; set; }   
         public int RatingScale { get; set; } 
-        public string SeriesOrMovie { get; set; }        
+        public string SeriesOrMovie { get; set; }
+        public IEnumerable<Genre> Genre { get; set; }
 
     }
 }
