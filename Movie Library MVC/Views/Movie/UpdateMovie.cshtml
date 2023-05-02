@@ -9,8 +9,18 @@
         <label asp-for="MovieName" class="control-label">Name</label>
         <input type="text" name="MovieName" class="form-control" value="@Model.MovieName" />
 
-        @*<div class="form-group">
-            <label for="">Select a Category</label>
+         @*<div class="form-group">
+            <label for="">Select a Genre</label>
+            <select class="form-control" name="GenreName" value="">
+            @foreach (var movie in Model.Genre)
+            {
+                        <option value="@movie.GenreName">@movie.GenreID @movie.GenreName</option>
+            }
+            </select>
+        </div>*@
+@*
+        <div class="form-group">
+            <label for="">Select a Genre</label>
             <select class="form-control" name="GenreID" value="">
             @foreach (var cat in Model.GenreName)
             {
